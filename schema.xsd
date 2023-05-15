@@ -1,0 +1,145 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="inventory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="product">
+                <xs:complexType>
+                  <xs:choice>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:short" name="price"/>
+                    <xs:element type="xs:string" name="category"/>
+                    <xs:element name="variants">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="variant">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="description"/>
+                                <xs:element type="xs:byte" name="quantity"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:byte" name="id"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="supplier">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="id"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                  <xs:attribute type="xs:byte" name="id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="orders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="order">
+                <xs:complexType>
+                  <xs:choice>
+                    <xs:element type="xs:string" name="date"/>
+                    <xs:element name="customer">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="id"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="products">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="product">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:byte" name="quantity"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:byte" name="product_id"/>
+                              <xs:attribute type="xs:byte" name="variant_id"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:short" name="total"/>
+                  </xs:choice>
+                  <xs:attribute type="xs:byte" name="id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="suppliers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="supplier">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:string" name="category"/>
+                    <xs:element name="contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="phone"/>
+                          <xs:element type="xs:string" name="email"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="customers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="customer">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element name="address">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="street"/>
+                          <xs:element type="xs:string" name="city"/>
+                          <xs:element type="xs:string" name="state"/>
+                          <xs:element type="xs:int" name="zip"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="contact">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="phone"/>
+                          <xs:element type="xs:string" name="email"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

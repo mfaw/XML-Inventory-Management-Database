@@ -1,0 +1,384 @@
+<inventory>
+  <products>
+    <product id="1">
+      <name>White Sugar</name>
+      <description>White Sugar to eat</description>
+      <price>25</price>
+      <category>Food</category>
+      <variants>
+        <variant id="1">
+          <description>1 KG</description>
+          <quantity>99</quantity>
+        </variant>
+      </variants>
+      <supplier id="1"/>
+    </product>
+    <product id="2">
+      <name>Oversized Oxford Button-Up Shirt</name>
+      <description>100% COTTON</description>
+      <price>700</price>
+      <category>Clothing</category>
+      <color>Green</color>
+      <supplier id="2"/>
+      <variants>
+        <variant id="1">
+          <description>Small</description>
+          <quantity>2</quantity>
+        </variant>
+        <variant id="2">
+          <description>Medium</description>
+          <quantity>7</quantity>
+        </variant>
+        <variant id="3">
+          <description>Large</description>
+          <quantity>5</quantity>
+        </variant>
+      </variants>
+    </product>
+    <product id="3">
+      <name>Slim Flex Polo Shirt</name>
+      <description>97% Cotton 3% Elastane</description>
+      <price>700</price>
+      <category>Clothing</category>
+      <color>Burgundy</color>
+      <supplier id="2"/>
+      <variants>
+        <variant id="1">
+          <description>Small</description>
+          <quantity>4</quantity>
+        </variant>
+        <variant id="2">
+          <description>Medium</description>
+          <quantity>13</quantity>
+        </variant>
+        <variant id="3">
+          <description>Large</description>
+          <quantity>6</quantity>
+        </variant>
+      </variants>
+    </product>
+    <product id="4">
+      <name>Coffee</name>
+      <description>Coffee Beans</description>
+      <price>100</price>
+      <category>Food</category>
+      <variants>
+        <variant id="1">
+          <description>100 G</description>
+          <quantity>22</quantity>
+        </variant>
+      </variants>
+      <supplier id="1"/>
+    </product>
+    <product id="5">
+      <name>Bluetooth Headphones</name>
+      <description>Compatible with iPhone, iPad and all mobiles with Bluetooth device.</description>
+      <price>750</price>
+      <category>Electronics</category>
+      <variants>
+        <variant id="1">
+          <description>Bluetooth</description>
+          <quantity>9</quantity>
+        </variant>
+      </variants>
+      <supplier id="3"/>
+    </product>
+    <product id="6">
+      <name>Samsung 32-inch HD LED TV</name>
+      <description>Display Size: 32-inch.</description>
+      <price>6350</price>
+      <category>Electronics</category>
+      <variants>
+        <variant id="1">
+          <description>32-inch</description>
+          <quantity>3</quantity>
+        </variant>
+      </variants>
+      <supplier id="4"/>
+    </product>
+    <product id="7">
+      <name>Chips</name>
+      <description>Lays</description>
+      <price>5</price>
+      <category>Food</category>
+      <variants>
+        <variant id="1">
+          <description>Salt</description>
+          <quantity>22</quantity>
+        </variant>
+        <variant id="2">
+          <description>Cheese</description>
+          <quantity>12</quantity>
+        </variant>
+      </variants>
+      <supplier id="1"/>
+    </product>
+    <product id="8">
+      <name>Ipad</name>
+      <description>Ipad Pro</description>
+      <price>10000</price>
+      <category>Electronics</category>
+      <variants>
+        <variant id="1">
+          <description>Rose Gold</description>
+          <quantity>8</quantity>
+        </variant>
+        <variant id="2">
+          <description>Gold</description>
+          <quantity>10</quantity>
+        </variant>
+      </variants>
+      <supplier id="3"/>
+    </product>
+    <product id="9">
+      <name>Skull Candy Headphones</name>
+      <description>Headphones with noise cancellation</description>
+      <price>500</price>
+      <category>Electronics</category>
+      <variants>
+        <variant id="1">
+          <description>Black</description>
+          <quantity>5</quantity>
+        </variant>
+        <variant id="2">
+          <description>White</description>
+          <quantity>5</quantity>
+        </variant>
+      </variants>
+      <supplier id="5"/>
+    </product>
+  <product id="10">
+    <name>Test</name>
+    <description>Test</description>
+    <price>99</price>
+    <category>Test</category>
+    <variants>
+      <variant id="1">
+        <description>Test1</description>
+        <quantity>5</quantity>
+      </variant>
+      <variant id="2">
+        <description>Test2</description>
+        <quantity>8</quantity>
+      </variant>
+    </variants>
+    <supplier id="5"/>
+  </product>
+  </products>
+  <orders>
+    <order id="1">
+      <date>5/1/23</date>
+      <customer id="1"/>
+      <products>
+        <product product_id="1" variant_id="1">
+          <quantity>5</quantity>
+        </product>
+      </products>
+      <total>125</total>
+    </order>
+    <order id="2">
+      <date>5/3/23</date>
+      <customer id="2"/>
+      <products>
+        <product product_id="4" variant_id="1">
+          <quantity>2</quantity>
+        </product>
+        <product product_id="2" variant_id="2">
+          <quantity>1</quantity>
+        </product>
+      </products>
+      <total>900</total>
+    </order>
+    <order id="3">
+      <date>5/10/23</date>
+      <products>
+        <product product_id="2" variant_id="2">
+          <quantity>2</quantity>
+        </product>
+      </products>
+      <customer id="1"/>
+      <total>1400</total>
+    </order>
+    <order id="4">
+      <date>5/16/23</date>
+      <products>
+        <product product_id="2" variant_id="1">
+          <quantity>2</quantity>
+        </product>
+        <product product_id="5" variant_id="1">
+          <quantity>1</quantity>
+        </product>
+        <product product_id="7" variant_id="2">
+          <quantity>5</quantity>
+        </product>
+      </products>
+      <customer id="2"/>
+      <total>2175</total>
+    </order>
+    <order id="5">
+      <date>5/10/23</date>
+      <products>
+        <product product_id="2" variant_id="2">
+          <quantity>1</quantity>
+        </product>
+      </products>
+      <customer id="1"/>
+      <total>700</total>
+    </order>
+    <order id="6">
+      <date>5/10/23</date>
+      <products>
+        <product product_id="1" variant_id="1">
+          <quantity>1</quantity>
+        </product>
+      </products>
+      <customer id="1"/>
+      <total>25</total>
+    </order>
+    <order id="7">
+      <date>5/31/23</date>
+      <products>
+        <product product_id="4" variant_id="1">
+          <quantity>2</quantity>
+        </product>
+        <product product_id="7" variant_id="2">
+          <quantity>3</quantity>
+        </product>
+      </products>
+      <customer id="2"/>
+      <total>215</total>
+    </order>
+  <order id="8">
+    <date>5/13/23</date>
+    <products>
+      <product product_id="10" variant_id="2">
+        <quantity>2</quantity>
+      </product>
+      <product product_id="7" variant_id="2">
+        <quantity>5</quantity>
+      </product>
+      <product product_id="3" variant_id="2">
+        <quantity>2</quantity>
+      </product>
+    </products>
+    <customer id="4"/>
+    <total>1623</total>
+  </order>
+  </orders>
+  <suppliers>
+    <supplier id="1">
+      <name>Carrefour</name>
+      <description>Grocery Store</description>
+      <category>grocery</category>
+      <contact>
+        <name>Ahmed Manager</name>
+        <phone>123-456-7890</phone>
+        <email>ahmed@carrefour.com</email>
+      </contact>
+    </supplier>
+    <supplier id="2">
+      <name>American Eagle</name>
+      <description>Clothing Store</description>
+      <category>clothing</category>
+      <contact>
+        <name>Mariam Manager</name>
+        <phone>987-654-3210</phone>
+        <email>mariam@ae.com</email>
+      </contact>
+    </supplier>
+    <supplier id="3">
+      <name>B-tech</name>
+      <description>Electronics Store</description>
+      <category>electronics</category>
+      <contact>
+        <name>Sam Manager</name>
+        <phone>987-654-5678</phone>
+        <email>sam@btech.com</email>
+      </contact>
+    </supplier>
+    <supplier id="4">
+      <name>Samsung</name>
+      <description>Electronics Store</description>
+      <category>electronics</category>
+      <contact>
+        <name>Sean Manager</name>
+        <phone>987-423-5678</phone>
+        <email>sean@samsung.com</email>
+      </contact>
+    </supplier>
+    <supplier id="5">
+      <name>Amazon</name>
+      <description>Online store for everything</description>
+      <category>Online</category>
+      <contact>
+        <name>Nill Manager</name>
+        <phone>0111-222-3333</phone>
+        <email>nill@amazon.com</email>
+      </contact>
+    </supplier>
+  <supplier id="6">
+    <name>Test Supplier</name>
+    <description>Testing Purposes</description>
+    <category>Testing</category>
+    <contact>
+      <name>Tester</name>
+      <phone>123-46-1234</phone>
+      <email>test@test.com</email>
+    </contact>
+  </supplier>
+  </suppliers>
+  <customers>
+    <customer id="1">
+      <name>Mariam Fawzi</name>
+      <address>
+        <street>123 Main St.</street>
+        <city>Cairo</city>
+        <state>CA</state>
+        <zip>14711</zip>
+      </address>
+      <contact>
+        <phone>555-555-5555</phone>
+        <email>18P1092@eng.asu.edu.eg</email>
+      </contact>
+    </customer>
+    <customer id="2">
+      <name>Jack Smith</name>
+      <address>
+        <street>456 Oak St.</street>
+        <city>Smallville</city>
+        <state>NY</state>
+        <zip>67890</zip>
+      </address>
+      <contact>
+        <phone>111-111-1111</phone>
+        <email>jack@smith.com</email>
+      </contact>
+    </customer>
+    <customer id="3">
+      <name>Will Smith</name>
+      <address>
+        <street>21 NY Street</street>
+        <city>NYC</city>
+        <state>LA</state>
+        <zip>12121</zip>
+      </address>
+      <contact>
+        <phone>0123-111-4444</phone>
+        <email>will@smith.com</email>
+      </contact>
+    </customer>
+  <customer id="4">
+    <name>Tester</name>
+    <address>
+      <street>123 Test</street>
+      <city>Cairo</city>
+      <state>Cairo</state>
+      <zip>12345</zip>
+    </address>
+    <contact>
+      <phone>111-222-3333</phone>
+      <email>tester@gmail.com</email>
+    </contact>
+  </customer>
+  </customers>
+</inventory>
